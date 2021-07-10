@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/*全ページ共通*/
+html {
+  font-family: sans-serif; /*フォントの種類を指定*/
+}
+html * { /*アスタリスクつけるとhtmlタグだけの指定とどう違う？*/
+  box-sizing: border-box; /*レスポンシブデザイン（パディングとボーダーを幅と高さに含める）*/
+}
+body {
+  margin: 0 0 0 0; /*デフォルトである不要な四隅のマージンを削除*/
+  background-color: #bbc8e6;
+}
+/*ページ全体を中央に設定*/
+.wrapper {
+  margin: 0 auto 0 auto;
+  max-width: 960px; /*レスポンシブデザイン（ボックスの最大横幅を設定して、どんな大きさの端末で見てもちょうどいい大きさに調節）*/
+}
+h2 {
+  color: #19448e;
+  font-size: 22px;
+  border-bottom: 3px dashed #1f3134;
+
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  border-color: rgb(38, 0, 255);
+}
+p {
+  line-height: 1.6; /*行間調整*/
+}
+a:link {
+  color: #d25833; /*未訪問リンクのスタイル*/
+}
+a:visited {
+  color: #d25833; /*訪問済みリンクのスタイル*/
+}
+a:hover {
+  color: #e3937a;
+}
+a:active {
+  color: #ff6a3b;
+}
+.logo {
+  margin: 50px 0 40px 0;
+  line-height: 0;
+  text-align: center;
+}
+.nav li {
+  display: inline; /*要素をブロック要素とインライン要素のどちらとして扱うか*/
+  list-style-type: none; /*リストの先頭に表示するマーカー文字の種類を指定*/
+  padding-right: 30px;
+}
+.nav ul {
+  margin: 0 0 0 0;
+  padding: 20px 10px 15px 20px;
+  background-image: none;
+  background-repeat: repeat-x;
+}
+/*aタグのスタイル上書き*/
+.nav a:link {
+  color: #3c454d;
+  text-decoration: none; /*主に下線部削除に使用*/
+}
+.nav a:visited {
+  color: #3c454d;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: #b44c97;
+  text-decoration: none;
+}
+.nav a:active {
+  color: #ee827c;
+  text-decoration: none;
+}
+.footer {
+  background-image: url(../images/For-footer.png);
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  padding: 80px 15px 20px 15px;
+  font-size: 12px;
+  /* color: #16160e; */
+  opacity:0.5;
+}
+/*透明の中でpタグを通常状態で表示させたい*/
+.footer p {
+  opacity: 1;
+  color: #16160e;
+}
+
+/*index.html固有*/
+.keyvisual {
+  margin: 15px 0 0;
+}
+.news-item {
+  margin: 0;
+}
+
+/*about.html固有*/
+.shop-photo {
+  float: left; /*テキストの回り込み*/
+  padding: 0 1em 1em 0;
+}
+.clear {
+  clear: both; /*テキストの回り込み解除*/
+}
+/*テーブル*/
+.info {
+  border-collapse: collapse; /*隣り合うセルのボーダーが１本にまとまる*/
+}
+.info th, .info td {
+  padding: 8px;
+  border: 1px solid #041991;
+  text-align: left;
+}
+.info th {
+  background-color: #19448e;
+  /* width: 90px; */
+  color: #fff;
+  vertical-align: top; /*見た目どこが変わったか不明*/
+}
+
+/*menu.html固有*/
+.menu-item {
+  display: flex; /*指定したクラスの子要素が自動的に横並びになる*/
+  border-bottom: 1px dashed black;
+  padding: 20px 8px;
+}
+.menu-photo {
+  margin-right: 16px;
+}
+
+
+/*ブロックボックス確認*/
+ /* *{
+  outline:1px solid black;
+} */
+/*複数指定*/
+/* th, td {
+    color: whitesmoke;
+    background-color: orange;
+} */
+
